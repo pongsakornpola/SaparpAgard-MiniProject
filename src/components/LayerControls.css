@@ -1,0 +1,38 @@
+.layer-controls {
+  position: absolute;
+  /* วางซ้ายสุดและเลื่อนลงใต้ปุ่มซูมของ Leaflet ให้เกือบชิด */
+  top: 90px;
+  left: 10px;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.layer-btn {
+  background-color: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(5px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  min-width: 150px;
+  transition: all 0.2s ease;
+}
+
+.layer-btn:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.layer-btn.active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}

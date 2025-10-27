@@ -1,0 +1,39 @@
+.aqi-box {
+  position: absolute;
+  right: 20px;
+  bottom: 80px; /* keep space above the bottom-right toggle */
+  background: rgba(30, 30, 30, 0.95);
+  color: #eaeaea;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  padding: 14px 16px;
+  min-width: 260px;
+  z-index: 12;
+}
+
+.aqi-header {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aqi-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  margin-bottom: 10px;
+}
+
+.aqi-values {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
